@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #333333;
+    background-color: #313030;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
@@ -33,12 +33,8 @@ header h1 a {
     font-size: 36px;
     color: var(--eggshell);
     margin: 0;
-    transition: color 1.5s ease-in-out 0s;
 }
 
-header h1 a:hover {
-    color: var(--eggshell);
-}
 
 header nav {
     margin: 7px 0;
@@ -56,12 +52,8 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 18px;
-    transition: color 1.5s ease-in-out 0s;
 }
 
-header nav ul li a:hover {
-    color: var(--eggshell);
-}
 
 
 .hero {
@@ -73,6 +65,50 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 100%;
     height: 400px;
 }
+
+/* about me */
+.container {
+    margin: 100px auto;
+    padding-right: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-me h2 {
+    color: var(--brown);
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.aboutline {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 60px;
+    border-left: 1px solid var(--brown);
+}
+
+.aboutline p {
+    width: 60%;
+    margin-bottom: 20px;
+    color: var(--brown);
+    line-height: 1.5;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+
+
