@@ -1,0 +1,78 @@
+:root {
+    --brown: rgb(142, 102, 50);
+    --white: #f6f7eb;
+    --eggshell: rgb(245, 240, 232)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 240, 232);
+}
+
+header {
+    background-color: #333333;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--eggshell);
+}
+
+header h1 a {
+    font-weight: lighter;
+    font-size: 36px;
+    color: var(--eggshell);
+    margin: 0;
+    transition: color 1.5s ease-in-out 0s;
+}
+
+header h1 a:hover {
+    color: var(--eggshell);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 18px;
+    transition: color 1.5s ease-in-out 0s;
+}
+
+header nav ul li a:hover {
+    color: var(--eggshell);
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 400px;
+}
