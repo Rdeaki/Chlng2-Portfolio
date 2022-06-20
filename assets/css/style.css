@@ -1,7 +1,9 @@
 :root {
-    --brown: rgb(142, 102, 50);
+    --brown: rgb(91, 63, 26);
     --white: #f6f7eb;
-    --eggshell: rgb(245, 240, 232)
+    --eggshell: rgb(245, 240, 232);
+    --darkgreen: rgb(7, 48, 7);
+    --grey: #313030;
 }
 
 * {
@@ -16,22 +18,22 @@ body {
 }
 
 header {
-    background-color: #313030;
+    background-color: var(--eggshell);
     padding: 20px 35px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--eggshell);
+    text-decoration: underline;
+    color: var(--brown);
 }
 
 header h1 a {
     font-weight: lighter;
     font-size: 36px;
-    color: var(--eggshell);
+    color: var(--brown);
     margin: 0;
 }
 
@@ -51,7 +53,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 
@@ -66,7 +68,7 @@ header nav ul li a {
     background-position: center;
     background-attachment: fixed;
     background-position: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 /* about me */
@@ -89,7 +91,7 @@ header nav ul li a {
     text-align: right;
     padding-top: 30px;
     padding-right: 60px;
-    padding-left: 60px;
+    flex: 1 30%;
 }
 
 .aboutline {
@@ -106,9 +108,128 @@ header nav ul li a {
     margin-bottom: 20px;
     color: var(--brown);
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 22px;
     padding-top: 20px;
 }
+/* end about me */
 
+/* work section */
 
+.showcase h2 {
+    color: var(--brown);
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: right;
+    flex: 1 30%;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex: 1 70%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-left: 1px solid var(--brown);
+    padding-left: 60px;
+}
+
+.project-container .firstwork {
+    flex: 1 100%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--grey);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.firstwork img {
+    max-width: 100%;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out 0.4s;
+}
+
+.firstwork img:hover {
+    opacity: 1;
+}
+
+.firstwork a {
+    flex: 0 0 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.firstwork a:hover {
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+}
+
+.project-container .work {
+    flex: 1 50%;
+    position: relative;
+    background-color: var(--grey);
+    padding: 8px;
+    margin-bottom: 10px;
+    justify-content:space-around
+}
+
+.work img {
+    max-width: 100%;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out 0.4s;
+}
+
+.work img:hover {
+    opacity: 1;
+}
+
+.work a {
+    flex: 0 0 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.work a:hover {
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+}
+
+.project-container .fill {
+    position: absolute;
+    z-index: 999;
+    margin: 0 15px;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    width: 50%;
+    background-color: var(--grey);
+}
+
+.fill h3 {
+    color: var(--eggshell);
+    font-size: 1.5vw;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+
+.fill p {
+    color: var(--eggshell);
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+    font-weight: lighter;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
 
