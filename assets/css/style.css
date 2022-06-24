@@ -2,7 +2,7 @@
     --brown: rgb(91, 63, 26);
     --white: #f6f7eb;
     --eggshell: rgb(245, 240, 232);
-    --darkgreen: rgb(7, 48, 7);
+    --bluegrey: #2a4255;
     --grey: #313030;
     --wood: #56342a;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(245, 240, 232);
+    background-color: var(--eggshell);
 }
 
 header {
@@ -285,3 +285,6 @@ footer p {
     color: var(--brown);
     margin: 0;
 }
+
+/* end footer */
+
