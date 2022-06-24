@@ -270,3 +270,18 @@ header nav ul li a {
     color: var(--brown);
 }
 
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    color: var(--brown);
+    margin: 0;
+}
